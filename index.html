@@ -1,10 +1,12 @@
 <style type = "text/css">
 	.profile {
-		text-align: center;
+		text-align: justify;
+		margin: 20px; /*so that the image is not too close to the text*/
 		width: 150px;
+		float: left;
 	}
 	.box {
-		width: 50%;
+		width: 70%;
 		margin-left: 0%;
 	}
 	.box_img{
@@ -12,6 +14,15 @@
 	}
 	.input_style{
 		width: 100%;
+	}
+	.title{
+		font-size: 25px;
+	}
+	.home{
+		font-size: 28px;
+	}
+	.indent{
+		text-indent: 5em;
 	}
 </style>
 <!DOCTYPE html>
@@ -29,15 +40,16 @@
 </head>
 <body>
 
-    <p> Kaili Chen </p>
+    <p class = home> Kaili Chen </p>
 
     <div class = box>
     	<div class = box_img>
     		<img class = profile src = "profile.JPG">
     	</div>
-    <p> About Me </p>
+    <p>  <br> </p>
+    <p class = title> About Me </p>
     <p>Currently a senior at Carnegie Mellon studying Statistics and Machine Learning. I am looking forward to industry challenges and opportunities where data science and statistics can be used, aiming to either solve the challenge or to understand the challenge from a new perspective. </p>
-    <input class = input_style type = "text" name = "hello", placeholder="What's your motto?">
+    <input class = input_style type = "text" name = "hello", placeholder="What's your motto? Mine is ">
     </div>
 
     <script type="text/javascript" src="./Give Me a Title!_files/interactions.js"></script>    <!-- Insert JQuery Script -->
