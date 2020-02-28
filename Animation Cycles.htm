@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)https://cardadfar.github.io/stuco_webdev_website/assets/files/animation_cycles.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animation Cycles</title>                          
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./Animation Cycles_files/jquery.min.js"></script>
+</head>
+<body>
+
+    <style type="text/css">
+
+    	body {
+    		margin-left: 10%;
+    		margin-right: 10%;
+    		margin-top: 40px;
+    		background: #f9f9f9;
+    	}
+
+    	p {
+    		font-family: Arial;
+    		font-size: 18px;
+    		color: #777777;
+    	}
+
+    	.divider {
+    		width: 100%;
+    		height: 1px;
+    		margin-top: 25px;
+    		margin-bottom: 25px;
+    		background: #afafaf;
+    	}
+
+    	.circle {
+    		width: 100px;
+    		height: 100px;
+    		background: #a5c7ff;
+      		border-radius: 50%
+    	}
+
+    </style>
+
+    <p> click (and hold) on a shape to play its animation cycle
+
+    </p><div class="divider"></div>
+    <p> - linear - </p>
+    <div class="circle" id="linear"></div>
+    <div class="divider"></div>
+
+    <p> - ease in - </p>
+    <div class="circle" id="ease-in"></div>
+    <div class="divider"></div>
+
+    <p> - ease out - </p>
+    <div class="circle" id="ease-out"></div>
+    <div class="divider"></div>
+
+    <p> - ease in out - </p>
+    <div class="circle" id="ease-in-out"></div>
+    <div class="divider"></div>
+
+    <p> - ease - </p>
+    <div class="circle" id="ease"></div>
+    <div class="divider"></div>
+
+
+
+    <script type="text/javascript">
+        
+        $("#linear").hover( function() {
+
+            console.log("got here:");
+            $("#linear").animate({opacity: 0.25}, 500);
+            $("#linear").animate({'margin-left': '1000px'}, 500);
+
+        });
+
+    </script>
+
+
+
+</body></html>
