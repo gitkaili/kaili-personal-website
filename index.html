@@ -11,7 +11,7 @@
     <link rel="icon" href="https://cardadfar.github.io/stuco_webdev_website/assets/files/cool-icon.png">                    <!-- Insert Icon -->
     <script src="./Give Me a Title!_files/jquery.min.js"></script>
 </head>
-<body>
+<body margin = 0>
 
 	<style type = "text/css">
 		.root{
@@ -72,11 +72,7 @@
 			position: sticky;
 			position: -webkit-sticky; /* used as sticky for safari*/
 			top: 0;
-
-		/* Toggle between static and sticky */
-
-		/*position: sticky;
-		top: 0; */
+			z-index:99;
 		}
 		.nav-bar > .element {
 			width: 15.5%;
@@ -98,16 +94,6 @@
 			padding: 0 4px;
 		}
 
-		/* Create two equal columns that sits next to each other */
-		.column {
-		  flex: 50%;
-		  padding: 0 4px;
-		}
-
-		.column img {
-		  margin-top: 8px;
-		  vertical-align: middle;
-		}
 		.author__urls-wrapper {
 	    	vertical-align: top;
 	    	display: inline-block;
@@ -159,6 +145,7 @@
 		    transition-duration: 0.4s;
 		    transition-timing-function: ease-in-out;
 		    transition-delay: 0s;
+		    /*margin:0px;*/
 		}
 		.project_grid > .project_img:hover{
 			opacity:1.0;
@@ -187,7 +174,7 @@
     </div>
 
 	<div class="author__urls-wrapper"> <ul class="author__urls-social-icons">
-	<li class="map-marker"> Pittsburgh, PA</li>
+	<li class="map-marker"> Pittsburgh, PA, USA</li>
 	<li class= "email-marker"><a href="mailto:chenkaili56@hotmail.com">Email</a></li>
 	<li class= "linkedin-marker"><a href="https://www.linkedin.com/in/kailichen97/?locale=en_US">LinkedIn</a></li>
 	<li  class = "youtube-marker"><a href="https://www.youtube.com/channel/UCAzB7YYO8a6HMSGR3LuisJA?view_as=subscriber">Youtube</a></li>
@@ -195,9 +182,9 @@
 	
 	<div class = project_grid>
 		<img class = project_img src = "project_image/beijing3.JPG">
-		<img class = project_img src = "project_image/pic6.JPG">
-		<img class = project_img src = "project_image/pic2.JPG">
-		<img class = project_img src = "project_image/pic3.JPG">
+		<img class = project_img src = "project_image/food/cake.JPG">
+		<img class = project_img src = "project_image/ascend.JPG">
+		<img class = project_img src = "project_image/Seaanemone.JPG">
 	</div>
 
 </body></html>
