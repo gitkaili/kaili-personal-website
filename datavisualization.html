@@ -79,12 +79,10 @@
 			padding: 0 4px;
 		}
 		.project_grid {
-			width : 64%;
-			margin-left: 17%;
+			margin-left: 16%;
 		}
-		.project_grid > .project_img {
-			width : calc(50%);
-			opacity:0.5;
+		.project_img {
+			width:500px;
 			transition: all 0.2s ease-in-out;
 		    transition-property: all;
 		    transition-duration: 0.4s;
@@ -92,8 +90,57 @@
 		    transition-delay: 0s;
 		    /*margin:0px;*/
 		}
-		.project_grid > .project_img:hover{
-			opacity:1.0;
+		.example {
+			cursor: pointer;
+			display: inline-block;
+			height: 500px;
+			position: relative;
+			overflow: hidden;
+			width: 500px;
+			text-align:center;
+			float:left;
+	    }
+	    .example .fadedbox {
+			background-color: #666666;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #fff;
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;
+			transition: all 300ms ease-out;
+			opacity: 0;
+			width: 500px;
+			height: 300px;
+			padding: 130px 20px;
+	      }
+		.example:hover .fadedbox { opacity: 0.8; }
+		.example .text {
+			-webkit-transition: all 300ms ease-out;
+			-moz-transition: all 300ms ease-out;
+			-o-transition: all 300ms ease-out;
+			-ms-transition: all 300ms ease-out;
+			transition: all 300ms ease-out;
+			transform: translateY(30px);
+			-webkit-transform: translateY(30px);
+		}
+	    .example .title {
+			font-size: 1.5em;
+			opacity: 0;
+			transition-delay: 0.2s;
+			transition-duration: 0.3s;
+	    }
+	    .example:hover .title,
+	    .example:focus .title {
+			opacity: 1;
+			transform: translateY(0px);
+			-webkit-transform: translateY(0px);
+	    }
+		.box {
+			width: 60%;
+			margin-left: 16%;
 		}
 	</style>
 
@@ -109,25 +156,111 @@
 		<a href="https://gitkaili.github.io/kaili-personal-website/index.html" class="element"> Personal </a>
 	</div>
 
-	<div class = project_grid>
-			<img class = project_img src = "ggplot2 gallery/dodged bar chart.png">
-			<img class = project_img src = "ggplot2 gallery/faceted_density_plot.png">
-			<img class = project_img src = "ggplot2 gallery/boxplot_violinplot.png">
-			<img class = project_img src = "ggplot2 gallery/map_grid.png">
-			<img class = project_img src = "ggplot2 gallery/distribution.png">
-			<img class = project_img src = "ggplot2 gallery/linear regression.png">
-			<img class = project_img src = "ggplot2 gallery/map_arrow.png">
-			<img class = project_img src = "ggplot2 gallery/mosaic plot.png">
-			<img class = project_img src = "ggplot2 gallery/dendrogram.png">
-			<img class = project_img src = "ggplot2 gallery/correlation.png">
-			<img class = project_img src = "ggplot2 gallery/confidence interval.png">
-			<img class = project_img src = "ggplot2 gallery/4D.png">
-			<img class = project_img src = "ggplot2 gallery/faceted on both axis.png">
-			<img class = project_img src = "ggplot2 gallery/network.png">
-			<img class = project_img src = "ggplot2 gallery/stacked bar chart.JPG">
-			<img class = project_img src = "ggplot2 gallery/Time_Series_Moving_Average.png">
+	<div class = box>
+		<p class = title> R ggplot2 Gallery</p>
+	    <p class = paragraph>Here is a gallery of data visualizations I created using ggplot2 package in R </p>
+    </div>
 
-		</div>
+	<div class = project_grid>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/dodged bar chart.png">
+			<div class="fadedbox">
+        		<div class="title text"> Dodged bar chart </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/stacked bar chart.JPG">
+			<div class="fadedbox">
+        		<div class="title text"> Stacked bar chart </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/faceted on both axis.png">
+			<div class="fadedbox">
+        		<div class="title text"> Faceted bar chart </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/faceted_density_plot.png">
+			<div class="fadedbox">
+        		<div class="title text"> Faceted density plot </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/boxplot_violinplot.png">
+			<div class="fadedbox">
+        		<div class="title text"> Boxplot & violinplot </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/map_grid.png">
+			<div class="fadedbox">
+        		<div class="title text"> Maps grid </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/distribution.png">
+			<div class="fadedbox">
+        		<div class="title text"> Distribution </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/linear regression.png">
+			<div class="fadedbox">
+        		<div class="title text"> Linear Regression </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/map_arrow.png">
+			<div class="fadedbox">
+        		<div class="title text"> Flight Paths Map </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/mosaic plot.png">
+			<div class="fadedbox">
+        		<div class="title text"> mosaic plot </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/dendrogram.png">
+			<div class="fadedbox">
+        		<div class="title text"> Dendrogram </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/correlation.png">
+			<div class="fadedbox">
+        		<div class="title text"> Correlation Matrix </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/confidence interval.png">
+			<div class="fadedbox">
+        		<div class="title text"> Confidence Interval </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/4D.png">
+			<div class="fadedbox">
+        		<div class="title text"> 4D </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/Time_Series_Moving_Average.png">
+			<div class="fadedbox">
+        		<div class="title text"> Time Series with Moving Average </div>
+      		</div>
+      	</div>
+		<div class="example">
+			<img class = project_img src = "ggplot2 gallery/network.png">
+			<div class="fadedbox">
+        		<div class="title text"> Network </div>
+      		</div>
+      	</div>
+
+
+</div>
 
 
 </body></html>
