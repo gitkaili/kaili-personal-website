@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multi-Level Parallax</title>                           
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<style type="text/css">
+		
+		body, html {
+			margin: 0;
+			height: 100%;
+		}
+
+		.parallax-img-coverphoto {
+			position: relative;
+    		opacity: 0.65;
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		/*background-size: cover;*/
+    		}
+		.parallax-img {
+			position: relative;
+    		/*opacity: 0.95;*/
+    		background-attachment: fixed;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		/*background-size: cover;*/		}
+
+		.content {
+			width: 80%;
+			margin-left: 10%;
+		}
+
+		.content > .title {
+			font-size: 50px;
+			font-weight: 10px;
+			text-align: center;
+		}
+
+		.content p {
+			font-family: Arial;
+			font-size: 16px;
+			color: #777;
+			line-height: 30px;
+			text-align: justify;
+		}
+
+
+	</style>
+
+    <div class=parallax-img-coverphoto style='background-image: url(pipaxing1.png); height: 450px;'></div>
+
+    <div class=content>
+    	<p class=title>Chinese Calligraphy Final Piece</p>
+		<p> The following piece a famous sentence from the poem 琵琶行：同是天涯沦落人，相逢何必曾相识。 The brief translation is: Now that we are both unfortunate people in this world and we met each other, why does it matter that we didn’t  know each other before?</p>
+
+	</div>
+
+
+    <div class=parallax-img style='background-image: url(pipaxing2.jpeg); height: 100%;'></div>
+
+</body>
+</html>
